@@ -4,5 +4,3 @@
   Shyd
   </a>
 </h1>
-
-<h4 align="center">Lightning-fast And Powerful Code Editor</h4>
