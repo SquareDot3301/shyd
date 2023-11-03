@@ -9,7 +9,7 @@
   <meta name="description" content="Shyd - Anonymous collective fighting for rights on the Internet" />
   <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
   <meta name="keywords" content="livre, epub, gratuit, ebooks, ebook, quetzal, data, twitter, mastodon, matrix" />
-  <meta property="og:title" content="MaelDev.fr" />
+  <meta property="og:title" content="Shyd.xyz" />
   <meta property="og:description" content="Shyd - Anonymous collective fighting for rights on the Internet" />
   <meta property="og:image" content="./assets/img/banner.png" />
   <meta property="og:image:alt" content="Shyd - Anonymous collective fighting for rights on the Internet" />
