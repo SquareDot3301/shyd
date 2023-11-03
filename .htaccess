@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirige vers la page spécifique au livre
+RewriteRule ^books/(.*)$ book.php?file=$1 [L]

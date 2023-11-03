@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../fonts/coolvetica\ rg.otf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+footer,
+header,
+nav,
+label,
+::placeholder {
+  font-family: "Coolvetica";
+  src: url("../fonts/coolvetica\ rg.otf");
+}

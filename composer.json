@@ -1,0 +1,17 @@
+{
+  "name": "mael/test",
+  "autoload": {
+    "psr-4": {
+      "Mael\\Test\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "b"
+    }
+  ],
+  "require": {
+    "erusev/parsedown": "^1.7",
+    "vlucas/phpdotenv": "^5.5"
+  }
+}
