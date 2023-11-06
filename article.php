@@ -95,7 +95,7 @@
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -170,7 +170,7 @@
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -207,7 +207,6 @@
     $article = $stmt->fetch(PDO::FETCH_ASSOC);
 
     $userId = $_SESSION['user_id'];
-    include './config.php';
 
     $sql = "SELECT username FROM users WHERE id = ?";
     $stmt = $pdo->prepare($sql);
@@ -226,15 +225,14 @@
     echo '<div class="text-center my-3">';
     echo "<h1 class='text-4xl underline'>" . $article['title'] . "</h1>";
     echo "<p class='italic text-xl'>" . $article['description'] . "</p>";
-    echo "<p class='text-lg'>Par @" . $article['author'] . "</p>";
     echo '</div>';
     echo '<div class="post-content text-lg md:text-xl break-words text-justify w-full md:w-2/3 border border-slate-400 rounded-md sm:p-8 m-3 mx-auto">';
     echo "<div class=''>" . $Parsedown->text($article['content']) . "</div>";
     echo '</div>';
     if ($userId === $article["author"]) {
       echo '<div class="flex justify-center">';
-      echo '<a class="mx-5 text-second underline focus:text-primary" href="./update.php?slug=' . $article['slug'] . '">Modifier votre article</a>';
-      echo '<a class="mx-5 text-second underline focus:text-primary" href="./delete-post.php?slug=' . $article["slug"] . '">Supprimer votre article</a>';
+      echo '<a class="mx-5 text-second underline focus:text-primary" href="./posts/update.php?slug=' . $article['slug'] . '">Modifier votre article</a>';
+      echo '<a class="mx-5 text-second underline focus:text-primary" href="./posts/delete-post.php?slug=' . $article["slug"] . '">Supprimer votre article</a>';
       echo '</div>';
     }
     ?>

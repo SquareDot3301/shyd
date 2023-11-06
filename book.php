@@ -94,7 +94,7 @@
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -168,7 +168,7 @@
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"

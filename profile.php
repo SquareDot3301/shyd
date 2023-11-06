@@ -75,7 +75,7 @@
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -148,7 +148,7 @@
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -177,7 +177,7 @@
     <section class="my-5">
       <h1 class="text-center text-4xl underline">Mon profile :</h1>
       <div class="flex justify-center my-10">
-        <form class="w-full md:w-1/2 bg-white shadow-md rounded-lg p-6" action="./user-update.php" method="post"
+        <form class="w-full md:w-1/2 bg-white shadow-md rounded-lg p-6" action="./user/user-update.php" method="post"
           enctype="multipart/form-data">
           <?php
           $sql = "SELECT username, email, password FROM users WHERE id = ?";
@@ -236,7 +236,7 @@
       </div>';
           ?>
         </form>
-        <a class="text-second underline focus:text-primary" href="./user-delete.php">Supprimer mon compte</a>
+        <a class="text-second underline focus:text-primary" href="./user/user-delete.php">Supprimer mon compte</a>
       </div>
     </section>
   </header>

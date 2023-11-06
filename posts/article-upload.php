@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$slug = $_GET['slug'];
+
 $userId = $_SESSION['user_id'];
 
 if (!$userId) {
@@ -26,8 +28,6 @@ if (strlen($description) > 100) {
     echo "La description ne doit pas dépasser 100 caractères.";
     exit;
 }
-
-include "./config.php";
 
 $sql = "INSERT INTO posts (slug, title, description, author, content, created_at) VALUES (?, ?, ?, ?, ?, NOW())";
 $stmt = $pdo->prepare($sql);

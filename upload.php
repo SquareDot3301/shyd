@@ -84,7 +84,7 @@ if (!isset($_SESSION['user_id'])) {
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -157,7 +157,7 @@ if (!isset($_SESSION['user_id'])) {
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -184,8 +184,8 @@ if (!isset($_SESSION['user_id'])) {
   </nav>
   <h1 class="text-center my-10 text-3xl">Upload de livres</h1>
   <div class="flex justify-center my-10">
-    <form action="./upload/music-upload.php" method="post" enctype="multipart/form-data">
-      <input type="file" accept=".mp3" name="mp3File" />
+    <form action="./upload/book-upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" accept=".epub" name="epubFile" />
       <input class="border-2 border-black p-2 rounded-xl" type="submit" value="Upload" />
     </form>
   </div>

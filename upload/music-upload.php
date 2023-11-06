@@ -16,9 +16,9 @@ if (isset($_FILES['mp3File'])) {
   $fileError = $file['error'];
 
   if ($fileError === UPLOAD_ERR_OK) {
-    move_uploaded_file($fileTmpPath, '/resources/music/' . $fileName);
+    move_uploaded_file($fileTmpPath, '../resources/music/' . $fileName);
     echo 'Le fichier a été téléchargé avec succès !';
-    echo 'Voici le lien vers le fichier : https://shyd.xyz/resources/music/' . $file . '';
+    echo 'Voici le lien vers le fichier : https://shyd.xyz/resources/music/' . $fileName . '';
     echo 'Copiez ce lien et mettez-le dans le champ "Lien" du formulaire de partage publique de la musique';
     echo '<a href="../upload.php">Revenir sur la page pour rendre publique mon livre</a>';
     exit;

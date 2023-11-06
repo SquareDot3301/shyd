@@ -75,7 +75,7 @@
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -130,12 +130,12 @@
             class="absolute right-0 mt-2 py-2 w-44 bg-white rounded-md shadow-lg hidden"
             >';
         echo '<a
-            href="#"
+            href="./profile.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/user.png"
             class="px-3"
-            alt="Logout"
+            alt="User"
             />Profile</a
             >';
         echo '<a
@@ -148,7 +148,7 @@
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"

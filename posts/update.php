@@ -22,7 +22,7 @@ if ($article["author"] !== $userId) {
     exit;
 }
 
-echo "<form action='article-update.php' method='POST'>";
+echo "<form action='article-update.php?slug=" . $article['slug'] . "' method='POST'>";
 echo "<input type='hidden' name='slug' value='" . $article['slug'] . "'>";
 echo "<label for='title'>Titre :</label>";
 echo "<input type='text' id='title' name='title' value='" . $article['title'] . "' required maxlength='30' />";

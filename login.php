@@ -75,7 +75,7 @@
             />Publier</a
             >';
             echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -148,7 +148,7 @@
             />Publier</a
             >';
         echo '<a
-            href="/auth-logout.php"
+            href="./auth/auth-logout.php"
             class="px-4 py-2 text-sm flex items-center"
             ><img
             src="./assets/img/logout.png"
@@ -175,7 +175,7 @@
   </nav>
   <div class="flex justify-center items-center h-auto my-32">
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form enctype="multipart/form-data" class="space-y-6" action="./auth-login.php" method="post">
+      <form enctype="multipart/form-data" class="space-y-6" action="./auth/auth-login.php" method="post">
         <div>
           <label for="username" class="block text-sm font-medium leading-6 text-gray-900">
             Nom d'utilisateur :
