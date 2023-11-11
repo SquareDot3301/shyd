@@ -12,7 +12,7 @@
 
     include "./config.php";
 
-    $sql = "SELECT * FROM books WHERE slug = ?";
+    $sql = "SELECT * FROM music WHERE slug = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$slug]);
     $article = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -198,7 +198,7 @@
 
         include "./config.php";
 
-        $sql = "SELECT * FROM books WHERE slug = ?";
+        $sql = "SELECT * FROM music WHERE slug = ?";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$slug]);
         $article = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -208,12 +208,11 @@
             exit;
         }
 
-        include "./vendor/autoload.php";
-
         echo '<div class="text-center my-3">';
         echo "<h1 class='text-4xl underline'>" . $article['title'] . "</h1>";
         echo "<p class='italic text-xl'>" . $article['description'] . "</p>";
-        echo "<a download href='" . $article["link"] . "' class='text-second text-3xl underline duration-150 hover:text-primary'>Télécharger le livre</a>";
+        echo "<audio controls><source src='" . $article["link"] . "' type='audio/mpeg'>Your browser does not support the audio element.</audio>";
+        echo "<a download href='" . $article["link"] . "' class='text-second text-3xl underline duration-150 hover:text-primary'>Télécharger la musique</a>";
         echo '</div>';
         if ($userId === $article["author"]) {
             echo '<div class="flex justify-center">';
