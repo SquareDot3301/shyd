@@ -26,6 +26,7 @@ if (isset($_FILES['epubFile'])) {
     echo 'Une erreur s\'est produite lors du téléchargement du fichier.';
   }
 } else {
-  echo '<a class="text-blue-800 underline text-2xl focus:text-red-500" href="/">Retournez au home</a>';
+  echo "Il n'y a aucun fichier à télécharger !";
+  echo '<a class="text-blue-800 underline text-2xl focus:text-red-500" href="/upload">Réessayer</a>';
 }
 ?>

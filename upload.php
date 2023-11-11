@@ -220,7 +220,7 @@ if (!isset($_SESSION['user_id'])) {
   </div>
   <h1 class="text-center my-10 text-3xl">Upload de musique</h1>
   <div class="flex justify-center my-10">
-    <form action="./upload/book-upload.php" method="post" enctype="multipart/form-data">
+    <form action="./upload/music-upload.php" method="post" enctype="multipart/form-data">
       <input type="file" accept=".mp3" name="mp3File" />
       <input class="border-2 border-black p-2 rounded-xl" type="submit" value="Upload" />
     </form>

@@ -215,8 +215,8 @@
 
     echo '<div class="text-center my-3">';
     echo "<h1 class='text-4xl underline'>" . $article['title'] . "</h1>";
-    echo "<p class='italic text-xl'>" . $article['description'] . "</p>";
-    echo "<a download href='" . $article["link"] . "' class='text-second text-3xl underline duration-150 hover:text-primary'>Télécharger le livre</a>";
+    echo "<p class='italic text-xl my-5'>" . $article['description'] . "</p>";
+    echo "<a download href='" . $article["link"] . "' class='text-second text-3xl underline duration-150 hover:text-primary mb-4'>Télécharger le livre</a>";
     echo '</div>';
     if ($userId === $article["author"]) {
       echo '<div class="flex justify-center">';

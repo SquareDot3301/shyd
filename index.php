@@ -175,7 +175,7 @@
   </nav>
   <header class="h-full">
     <section class="my-5">
-      <h1 class="text-center text-4xl underline">Les livres gratuits :</h1>
+      <h1 class="text-center text-4xl underline">Les livres récents :</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center">
         <?php
         include "./config.php";
@@ -202,7 +202,7 @@
       </div>
     </section>
     <section class="my-5">
-      <h1 class="text-center text-4xl underline">Les musiques favorites :</h1>
+      <h1 class="text-center text-4xl underline">Les musiques récentes :</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center">
         <?php
         include "./config.php";
@@ -229,7 +229,7 @@
       </div>
     </section>
     <section class="my-5">
-      <h1 class="text-center text-4xl underline">Mes articles de blog :</h1>
+      <h1 class="text-center text-4xl underline">Les articles de blog :</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center">
         <?php
         include "./config.php";
