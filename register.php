@@ -215,7 +215,7 @@
 
       <p class="mt-10 text-center flex items-center justify-center text-sm text-gray-500 dark:text-gray-300">
         Déjà un compte ?
-        <a href="./login.html" class="font-semibold mx-3 leading-6 text-second underline focus:text-primary">
+        <a href="./login.php" class="font-semibold mx-3 leading-6 text-second underline focus:text-primary">
           Connecte-toi !
         </a>
       </p>
